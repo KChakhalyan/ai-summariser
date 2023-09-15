@@ -1,5 +1,7 @@
 # AI Summarizer Website
 
+## Check the Website :- [Demo](https://rad-rolypoly-6e94db.netlify.app)
+
 Welcome to the AI Summarizer Website project! This project aims to simplify and enhance the reading experience by providing concise article summaries using AI technology. Below, you'll find a step-by-step guide on how to set up and use this website.
 
 ## Table of Contents
@@ -73,5 +75,3 @@ The project structure is organized as follows:
 4. Enjoy a concise and informative summary of the article!
 
 Thank you for checking out. I hope You found it useful.
-
-## Check the Website :- [Demo](https://rad-rolypoly-6e94db.netlify.app)

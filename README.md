@@ -1,4 +1,8 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f952da7d-e9f3-4c3a-a5e0-ffc3a6f6cc28/deploy-status?branch=main)](https://app.netlify.com/sites/rad-rolypoly-6e94db/deploys)
+
 # AI Summarizer Website
+
+![Screenshot 2023-09-15 at 17 39 35](https://github.com/KChakhalyan/ai-summariser/assets/10487372/8ad08090-0da5-48f0-ac88-39c1e1ff1387)
 
 ## Check the Website :- [Demo](https://rad-rolypoly-6e94db.netlify.app)
 

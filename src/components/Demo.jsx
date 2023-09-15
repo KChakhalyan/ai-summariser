@@ -42,6 +42,13 @@ const Demo = () => {
       }
    };
 
+   // create the hamdleRemove function that wil remove specific item from local storage
+   const handleRemove = (e) => {
+      const updatedAllArticles = allArticles.filter((item) => item.url !== article.url);
+      setAllArticles(updatedAllArticles);
+      localStorage.setItem("articles", JSON.stringify(updatedAllArticles));
+   };
+
    // copy the url and toggle the icon for user feedback
    const handleCopy = (copyUrl) => {
       setCopied(copyUrl);
@@ -55,18 +62,7 @@ const Demo = () => {
       }
    };
 
-   //  const handleRemoveItem = async (e) => {
-   //     const existingArticle = allArticles.find((item) => item.url === article.url);
-
-   //     const { data } = await getSummary({ articleUrl: article.url });
-
-   //     if (data?.summary) {
-   //        // update state and local storage
-   //        setAllArticles(updatedAllArticles);
-   //        localStorage.removeItem("articles", JSON.stringify(updatedAllArticles));
-   //     }
-   //  };
-   //  console.log(localStorage);
+   console.log(localStorage);
    return (
       <section className="mt-16 w-full max-w-xl">
          {/* Search */}
@@ -111,13 +107,13 @@ const Demo = () => {
                         <p className="flex-1 font-satoshi text-blue-700 font-medium text-sm truncate">
                            {item.url}
                         </p>
-                        {/* <div className="delete_btn" onClick={(item) => handleRemoveItem(item)}>
-                           <img
-                              src={deleteIcon}
-                              alt="deleteIcon"
-                              className="w-[60%] h-[60%] object-contain "
-                           />
-                        </div> */}
+                     </div>
+                     <div className="delete_btn" onClick={() => handleRemove(item)}>
+                        <img
+                           src={deleteIcon}
+                           alt="delete_icon"
+                           className="w-[40%] h-[40%] object-contain"
+                        />
                      </div>
                   </div>
                ))}

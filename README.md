@@ -2,6 +2,8 @@
 
 # [Demo](https://rad-rolypoly-6e94db.netlify.app)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f952da7d-e9f3-4c3a-a5e0-ffc3a6f6cc28/deploy-status?branch=main)](https://app.netlify.com/sites/rad-rolypoly-6e94db/deploys)
+
 # Ai-Summarizer App
 
 The **Ai-Summarizer** is a cutting-edge application that leverages AI technology to provide concise article summaries. This app has been developed following the **jsmastery tutorial** and employs a powerful stack of technologies, including **JavaScript, React, Redux, RapidAPI, Tailwind CSS, and Vite**.

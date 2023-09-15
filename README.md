@@ -1,81 +1,63 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f952da7d-e9f3-4c3a-a5e0-ffc3a6f6cc28/deploy-status?branch=main)](https://app.netlify.com/sites/rad-rolypoly-6e94db/deploys)
-
-# AI Summarizer Website
-
 ![Screenshot 2023-09-15 at 17 39 35](https://github.com/KChakhalyan/ai-summariser/assets/10487372/8ad08090-0da5-48f0-ac88-39c1e1ff1387)
 
-## Check the Website :- [Demo](https://rad-rolypoly-6e94db.netlify.app)
+# [Demo](https://rad-rolypoly-6e94db.netlify.app)
 
-Welcome to the AI Summarizer Website project! This project aims to simplify and enhance the reading experience by providing concise article summaries using AI technology. Below, you'll find a step-by-step guide on how to set up and use this website.
+# Ai-Summarizer App
 
-## Table of Contents
+The **Ai-Summarizer** is a cutting-edge application that leverages AI technology to provide concise article summaries. This app has been developed following the **jsmastery tutorial** and employs a powerful stack of technologies, including **JavaScript, React, Redux, RapidAPI, Tailwind CSS, and Vite**.
 
-1. Introduction
-2. Technologies Used
-3. Getting Started
-4. Project Structure
-5. How to Use
+## Features
 
-## Introduction
+-  **Article Summarization**: Ai-Summarizer uses advanced AI algorithms to automatically summarize lengthy articles, making it easier for users to grasp the main points quickly.
 
-This website leverages React, Redux Toolkit, Tailwind CSS, Vite, and Rapid API to provide users with high-quality article summaries in real-time. The global state management capabilities of Redux Toolkit ensure a responsive and interactive user experience.
+-  **User-Friendly Interface**: The app boasts an intuitive and aesthetically pleasing user interface built with React and styled using Tailwind CSS, ensuring a seamless and visually appealing experience.
 
-## Technologies Used
+-  **State Management with Redux**: Redux is integrated to efficiently manage application state, ensuring smooth data flow and a responsive user experience.
 
--  React
--  Redux Toolkit
--  Tailwind CSS
--  Vite
--  Rapid API
+-  **RapidAPI Integration**: Ai-Summarizer relies on RapidAPI to access external data and AI services, streamlining the article summarization process and enhancing its accuracy.
+
+-  **Fast Development with Vite**: Vite is used as the build tool, allowing for rapid development and quick project setup, so developers can focus on adding valuable features.
+
+## How it Works
+
+1. Users input the URL or text of the article they want to summarize into the app.
+
+2. The app sends the article data to the AI summarization service through RapidAPI.
+
+3. The AI service processes the article and generates a concise summary.
+
+4. The summary is displayed to the user, making it easy to understand the key points of the article without reading the entire text.
 
 ## Getting Started
 
-Follow these steps to set up and run the project on your local machine:
+If you want to try out Ai-Summarizer or contribute to its development, follow these steps:
 
-1. **Clone the Repository**
+1. Clone the repository from the
 
-   ```
-   git clone https://github.com/your-username/ai-summarizer-website.git
-   cd ai-summarizer-website
-   ```
+```
+git clone https://github.com/KChakhalyan/ai-summariser.git
+```
 
-2. **Install Dependencies**
+2. Install the necessary dependencies using npm or yarn.
 
-   ```
+   ```shell
    npm install
+   # or
+   yarn install
    ```
 
-3. **Set Up Rapid API**
+3. Create `.env` file and create a variable `VITE_RAPID_API_ARTICLE_KEY="<your key>"` which you can get from [Article Extractor and Summarizer](https://rapidapi.com/restyler/api/article-extractor-and-summarizer)
 
-   -  Sign up for a Rapid API account and obtain your API key.
-   -  Replace `REACT_APP_RAPID_API_KEY` in the `.env` file with your API key.
+![Screenshot 2023-09-15 at 18 44 01](https://github.com/KChakhalyan/ai-summariser/assets/10487372/55f6eebc-d7a3-47a4-9b89-79254f078e0d) 4. Start the development server.
 
-4. **Start the Development Server**
+```shell
+npm run dev
+# or
+yarn dev
+```
 
-   ```
-   npm run dev
-   ```
+5. Open your web browser and access the app at `http://localhost:****` it will be your localhost.
 
-5. **Open the Application**
-   Open your web browser and go to `http://localhost:3000` to access the website.
+## Conclusion
 
-## Project Structure
-
-The project structure is organized as follows:
-
--  `src/`
-   -  `components/`: React components
-   -  `services/`: Redux Toolkit slices and reducers
-   -  `main.jsx/`: Website pages
-   -  `styles/`: Tailwind CSS styles
-   -  `App.js`: Main application component
-   -  `store.js`: Redux store configuration
-
-## How to Use
-
-1. Enter or Paste the URL of the article you want to summarize in the input field.
-2. Click the "↩" button to Submit.
-3. The summarized article will be displayed on the screen in real-time.
-4. Enjoy a concise and informative summary of the article!
-
-Thank you for checking out. I hope You found it useful.
+Ai-Summarizer is a remarkable application that harnesses the power of AI to simplify the process of reading and comprehending articles. With its user-friendly interface and robust technology stack, it offers a seamless and efficient way to obtain concise article summaries. Whether you're a developer looking to contribute or a user seeking to save time, Ai-Summarizer has you covered.
